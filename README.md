@@ -1,1 +1,17 @@
-# library_applications_development_inclusive_language
+# Library Applications Development Inclusive Language
+University of Alberta Library Applications Development team is opting to use inclusive language instead of problematic terms in our team's projects and documentation through RuboCop's (https://github.com/rubocop/rubocop) Naming/InclusiveLanguage cop.
+
+Utilized the Edmonton Inclusive Language Guide along with the Android Open Source Project Respectful Code and Inclusive Documentation as a guide and reference for terms that are flagged as problematic and their suggested replacements:
+
+https://www.edmonton.ca/public-files/assets/document?path=PDF/InclusiveLanguageGuide2019.pdf
+https://source.android.com/docs/setup/contribute/respectful-code
+https://developers.google.com/style/inclusive-documentation#ableist-language
+https://developers.google.com/style/word-list
+
+# How to use this in a project
+Inherit the included RuboCop cops by inserting this at top of the project's ```.rubocop.yml``` file:
+```
+# TODO: replace with raw GitHub link to inclusive_language_rubocop.yml once merged
+inherit_from:
+- RAW_GITHUB_LINK_TO_INCLUSIVE_LANGUAGE_RUBOCOP.yml
+```
