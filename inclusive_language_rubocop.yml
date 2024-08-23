@@ -1,0 +1,97 @@
+Naming/InclusiveLanguage:
+  Enabled: true
+
+  FlaggedTerms:
+    # Common Business Words and Phrases.
+    whitelist:
+      Regex: !ruby/regexp '/white[-_\s]?list/'
+      Suggestions: ['allowlist', 'passlist', 'permitlist', 'permit']
+    blacklist:
+      Regex: !ruby/regexp '/black[-_\s]?list/'
+      Suggestions: ['banlist', 'blocklist', 'denylist', 'excludelist', 'block']
+    gre(a)ylist:
+      Regex: !ruby/regexp '/gr(e|a)y[-_\s]?list/'
+      Suggestions: ['provisional list', 'list']
+    dark/light-gre(a)y-list:
+      Regex: !ruby/regexp '/(dark|light)[-_\s]?gr(e|a)y[-_\s]?list/'
+      Suggestions: ['non-SDK API lists', 'conditionally blocked', 'max-target-X', 'unsupported']
+    black/white/gre(a)y-hat:
+      Regex: !ruby/regexp '/(black|white|gr(e|a)y)[-_\s]?hat/'
+      Suggestions: ['ethical', 'unethical']
+    master:
+      Suggestions: ['primary', 'leader', 'parent']
+      AllowedRegex:
+        # Rails master key.
+        - !ruby/regexp '/master[_\s\.]key/'
+    slave:
+      Suggestions: ['replica', 'secondary', 'follower']
+    first-class citizen:
+      Suggestions: ['core feature', 'built-in', 'top-level', 'first-class concern', 'core concern']
+    redline:
+      Suggestions: ['priority line', 'track changes', 'exception', 'anomaly', 'replacement list']
+    guru:
+      Suggestions: ['expert', 'teacher']
+
+    # Gender.
+    her:
+      WholeWord: true
+      Suggestions: ['they']
+    he:
+      WholeWord: true
+      Suggestions: ['they']
+    she:
+      WholeWord: true
+      Suggestions: ['them']
+    him:
+      WholeWord: true
+      Suggestions: ['them']
+    guys:
+      Suggestions: ['folks']
+    man-in-the-middle:
+      Regex: !ruby/regexp '/(man-in-the-middle|man in the middle|MITM)/'
+      Suggestions: ['person-in-the-middle', 'on-path-attack']
+    man-hours:
+      Regex: !ruby/regexp '/man[-_\s]?hours/'
+      Suggestions: ['person hours']
+    man-made:
+      Regex: !ruby/regexp '/man[-_\s]?made/'
+      Suggestions: ['artificial', 'manufactured', 'synthetic']
+    man-power:
+      Regex: !ruby/regexp '/man[-_\s]?power/'
+      Suggestions: ['staff', 'workforce']
+    manned:
+      Suggestions: ['staffed', 'crewed']
+    grandfather-clause:
+      Regex: !ruby/regexp '/grand[-_\s]?father[-_\s]?clause/'
+      Suggestions: ['exempt', 'legacy', 'made an exception']
+    grandfathered:
+      Regex: !ruby/regexp '/grand[-_\s]?fathered/'
+      Suggestions: ['exempt', 'legacy', 'made an exception']
+
+    # Physical and Mental Health.
+    sanity check:
+      Suggestions: ['check', 'validity check', 'final check', 'quick check']
+    sane:
+      Regex: !ruby/regexp '/(san(e|ity))/'
+      Suggestions: ['valid', 'sensible']
+    insane:
+      Regex: !ruby/regexp '/(insan(e|ity))/'
+      Suggestions: ['invalid', 'insensible']
+    mental/crazy/bonkers/lunatic:
+      Regex: !ruby/regexp '/(mental|crazy|bonkers|lunatic)/'
+      Suggestions: ['baffling']
+    mad:
+      WholeWord: true
+      Suggestions: ['baffling', 'baffled']
+    crippled:
+      Suggestions: ['slowed', 'overloaded']
+    dummy:
+      Suggestions: ['placeholder', 'mock', 'indicator variable']
+    dumb:
+      WholeWord: true
+      Suggestions: ['unintelligent', 'ignorant']
+    lame:
+      WholeWord: true
+      Suggestions: ['unconvincing', 'inadequate', 'weak']
+    blind:
+      Suggestions: ['deprive of understanding', 'camouflage', 'careless of']
