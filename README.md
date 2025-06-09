@@ -11,7 +11,6 @@ Utilized the Edmonton Inclusive Language Guide along with the Android Open Sourc
 ## How to use this in a project
 Inherit the included RuboCop cops by inserting this at top of the project's ```.rubocop.yml``` file:
 ```
-# TODO: replace with raw GitHub link to inclusive_language_rubocop.yml once merged
 inherit_from:
-- RAW_GITHUB_LINK_TO_INCLUSIVE_LANGUAGE_RUBOCOP.yml
+  - https://raw.githubusercontent.com/ualbertalib/library_applications_development_inclusive_language/main/inclusive_language_rubocop.yml
 ```
